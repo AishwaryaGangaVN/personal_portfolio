@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aishwarya Ganga VN | Data Analyst Portfolio
 
-## Getting Started
+## 🚀 Overview
 
-First, run the development server:
+A modern, high-performance portfolio website built to showcase my data analysis projects, skills, and professional experience. Designed with a focus on interactivity and aesthetics, it features immersive 3D visualizations, smooth animations, and a fully responsive layout.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Live Demo:** [Link to your deployed site (optional)]
+
+![Portfolio Preview](public/profile.png)
+
+## ✨ Key Features
+
+- **Interactive 3D Backgrounds**: Custom-built Neural Mesh and Floating Data Cubes using `React-Three-Fiber` and `GLSL` shaders.
+- **Modern UI/UX**: Glassmorphism effects, gradient typography, and micro-interactions powered by `Framer Motion`.
+- **Responsive Design**: Fully optimized layout for seamless viewing on desktops, tablets, and mobile devices.
+- **Performance Optimized**: Built with Next.js App Router for fast loading, SEO benefits, and smooth transitions.
+- **Dynamic Content**: Sections for Experience, Projects, Skills, and Education are modular and data-driven.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **3D Graphics**: [Three.js](https://threejs.org/) & [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🏗️ Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/AishwaryaGangaVN/personal_portfolio.git
+    cd personal_portfolio
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+
+4.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📂 Project Structure
+
+```
+src/
+├── app/              # Next.js App Router pages and layout
+├── components/       # Reusable UI components
+│   ├── 3d/           # Three.js 3D scenes (NeuralField, FloatingCubes)
+│   ├── sections/     # Page sections (Hero, About, Projects, etc.)
+│   └── ui/           # Generic UI elements (Navbar, Cards, Buttons)
+├── lib/              # Utility functions, constants, and animation variants
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📬 Contact
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I'm always open to discussing new opportunities and interesting projects.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Email**: [aishwaryaganga2004@gmail.com](mailto:aishwaryaganga2004@gmail.com)
+- **LinkedIn**: [Aishwarya Ganga VN](https://www.linkedin.com/in/aishwarya-ganga-vn/)
+- **GitHub**: [AishwaryaGangaVN](https://github.com/AishwaryaGangaVN)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed with ❤️ by Aishwarya Ganga VN
