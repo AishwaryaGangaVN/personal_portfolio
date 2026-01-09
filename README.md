@@ -10,11 +10,11 @@ A modern, high-performance portfolio website built to showcase my data analysis 
 
 ## ✨ Key Features
 
-- **Global 3D Ecosystem**: Seamless Neural Mesh and Floating Data Cubes that persist across the entire site for an immersive deep-space feel.
-- **Refined Glassmorphism UI**: High-end "Cool & Elegant" aesthetic with subtle Electric Blue glow effects and washout-free transparency.
-- **Advanced Mobile UX**: Optimized layout with vertically stacked certifications and touch-friendly interactions.
+- **Interactive 3D Backgrounds**: Custom-built Neural Mesh and Floating Data Cubes using `React-Three-Fiber` and `GLSL` shaders.
+- **Modern UI/UX**: Glassmorphism effects, gradient typography, and micro-interactions powered by `Framer Motion`.
+- **Responsive Design**: Fully optimized layout for seamless viewing on desktops, tablets, and mobile devices.
 - **Performance Optimized**: Built with Next.js App Router for fast loading, SEO benefits, and smooth transitions.
-- **Dynamic Content**: Modular, data-driven sections for Experience, Projects, Skills, and Education.
+- **Dynamic Content**: Sections for Experience, Projects, Skills, and Education are modular and data-driven.
 
 ## 🛠️ Tech Stack
 

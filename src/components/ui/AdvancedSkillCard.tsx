@@ -153,12 +153,7 @@ export default function AdvancedSkillCard({
                         {level}% Proficiency
                     </div>
 
-                    {/* Mobile: Show proficiency always */}
-                    <div className="md:hidden">
-                        <div className={`px-3 py-1 rounded-full bg-gradient-to-r ${colors.from} ${colors.to} text-white text-xs font-bold`}>
-                            {level}%
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
