@@ -6,7 +6,7 @@ import { GraduationCap, Award, Zap } from "lucide-react";
 
 export default function Education() {
     return (
-        <section id="education" className="relative py-20 md:py-32 bg-dark-900 overflow-hidden">
+        <section id="education" className="relative py-20 md:py-32 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{
@@ -57,11 +57,11 @@ export default function Education() {
                             <Award className="w-8 h-8 text-secondary-400" />
                             Certifications
                         </h3>
-                        <div className="flex overflow-x-auto pb-6 gap-6 no-scrollbar snap-x">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {CERTIFICATIONS.map((cert, index) => (
                                 <div
                                     key={cert.id || index}
-                                    className="min-w-[300px] glass-card p-6 rounded-2xl flex-shrink-0 snap-center hover:scale-[1.02] transition-all duration-300 hover:glow-primary"
+                                    className="glass-card p-6 rounded-2xl hover:scale-[1.02] transition-all duration-300 hover:glow-primary"
                                 >
                                     <div className="flex items-start gap-4">
                                         <div className="p-3 bg-gradient-to-br from-secondary-500 to-primary-500 rounded-xl group-hover:scale-110 transition-transform">

@@ -6,7 +6,7 @@ import AdvancedSkillCard from "../ui/AdvancedSkillCard";
 
 export default function Skills() {
     return (
-        <section id="skills" className="relative py-20 md:py-32 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900 overflow-hidden">
+        <section id="skills" className="relative py-20 md:py-32 overflow-hidden">
             <div className="relative z-10 container mx-auto px-6">
                 <div className="space-y-16">
                     {/* Section Title */}

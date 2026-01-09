@@ -27,9 +27,9 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="relative py-20 md:py-32 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-950 overflow-hidden">
+        <section id="contact" className="relative py-20 md:py-32 overflow-hidden">
             {/* Animated Background */}
-            <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 opacity-5">
                 <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-primary-500 rounded-full blur-3xl animate-pulse-slow" />
                 <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-secondary-500 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "1s" }} />
             </div>
@@ -53,7 +53,7 @@ export default function Contact() {
                             <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
 
                             {/* Email */}
-                            <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:glow-primary group">
+                            <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.1)] border border-white/5 hover:border-primary-500/20 group">
                                 <div className="flex items-start gap-4">
                                     <div className="p-3 bg-gradient-primary rounded-xl group-hover:scale-110 transition-transform">
                                         <Mail className="w-6 h-6 text-white" />
@@ -72,7 +72,7 @@ export default function Contact() {
                             </div>
 
                             {/* Phone */}
-                            <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:glow-primary group">
+                            <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.1)] border border-white/5 hover:border-primary-500/20 group">
                                 <div className="flex items-start gap-4">
                                     <div className="p-3 bg-gradient-primary rounded-xl group-hover:scale-110 transition-transform">
                                         <Phone className="w-6 h-6 text-white" />
@@ -87,7 +87,7 @@ export default function Contact() {
                             </div>
 
                             {/* Location */}
-                            <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:glow-primary group">
+                            <div className="glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.1)] border border-white/5 hover:border-primary-500/20 group">
                                 <div className="flex items-start gap-4">
                                     <div className="p-3 bg-gradient-primary rounded-xl group-hover:scale-110 transition-transform">
                                         <MapPin className="w-6 h-6 text-white" />
@@ -105,7 +105,7 @@ export default function Contact() {
                                     href={SOCIAL_LINKS.linkedin}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 glass-card p-4 rounded-xl hover:scale-105 transition-all duration-300 hover:glow-primary flex items-center justify-center gap-3"
+                                    className="flex-1 glass-card p-4 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.1)] border border-white/5 hover:border-primary-500/20 flex items-center justify-center gap-3"
                                 >
                                     <Linkedin className="w-6 h-6 text-primary-400" />
                                     <span className="text-white font-semibold">LinkedIn</span>
@@ -114,7 +114,7 @@ export default function Contact() {
                                     href={SOCIAL_LINKS.github}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 glass-card p-4 rounded-xl hover:scale-105 transition-all duration-300 hover:glow-primary flex items-center justify-center gap-3"
+                                    className="flex-1 glass-card p-4 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.1)] border border-white/5 hover:border-primary-500/20 flex items-center justify-center gap-3"
                                 >
                                     <Github className="w-6 h-6 text-primary-400" />
                                     <span className="text-white font-semibold">GitHub</span>
@@ -171,7 +171,7 @@ export default function Contact() {
 
                                 <button
                                     type="submit"
-                                    className="w-full px-8 py-4 bg-gradient-primary text-white font-semibold rounded-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 glow-primary flex items-center justify-center gap-3"
+                                    className="w-full px-8 py-4 bg-gradient-primary text-white font-semibold rounded-xl hover:scale-105 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.2)] transition-all duration-300 flex items-center justify-center gap-3"
                                 >
                                     <Send className="w-5 h-5" />
                                     Send Message
@@ -186,7 +186,6 @@ export default function Contact() {
             <div className="relative z-10 container mx-auto px-6 mt-20 pt-10 border-t border-gray-800">
                 <div className="text-center text-gray-400">
                     <p>© 2025 {PERSONAL_INFO.name}. All rights reserved.</p>
-                    <p className="mt-2 text-sm">Built with Next.js, Three.js, and Framer Motion</p>
                 </div>
             </div>
         </section>

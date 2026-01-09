@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { motion, useInView } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 import * as Icons from "lucide-react";
 
 interface AdvancedSkillCardProps {
@@ -56,8 +56,21 @@ export default function AdvancedSkillCard({
         setIsActive(!isActive);
     };
 
+    // Use useInView to trigger animation when the card enters the viewport
+    const ref = useRef(null);
+    const isInView = useInView(ref, { margin: "-20% 0px -20% 0px" });
+
+    useEffect(() => {
+        if (isInView) {
+            setIsActive(true);
+        } else {
+            setIsActive(false);
+        }
+    }, [isInView]);
+
     return (
         <div
+            ref={ref}
             onMouseEnter={() => setIsActive(true)}
             onMouseLeave={() => setIsActive(false)}
             onClick={handleInteraction}
@@ -65,12 +78,12 @@ export default function AdvancedSkillCard({
         >
             {/* Subtle Glow Effect */}
             <div
-                className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${colors.from} ${colors.to} blur-xl transition-opacity duration-300 ${isActive ? 'opacity-15' : 'opacity-0'
+                className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${colors.from} ${colors.to} blur-xl transition-opacity duration-300 ${isActive ? 'opacity-10' : 'opacity-0'
                     }`}
             />
 
             {/* Card Container */}
-            <div className={`relative glass-card p-6 rounded-2xl border ${colors.border} overflow-hidden transition-all duration-300 h-full flex flex-col items-center justify-center min-h-[200px]`}>
+            <div className={`relative glass-card p-6 rounded-2xl border border-primary-500/10 hover:border-primary-500/30 overflow-hidden transition-all duration-300 h-full flex flex-col items-center justify-center min-h-[200px] hover:shadow-[0_0_30px_-5px_rgba(0,217,255,0.15)]`}>
                 {/* Background Pattern */}
                 <div className="absolute inset-0 opacity-5">
                     <div className="absolute inset-0 bg-gradient-to-br from-white to-transparent" />

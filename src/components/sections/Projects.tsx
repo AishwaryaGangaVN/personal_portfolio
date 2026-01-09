@@ -15,7 +15,7 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 
     return (
         <motion.div
-            className="group relative glass-card rounded-3xl overflow-hidden hover:scale-[1.02] transition-all duration-500"
+            className="group relative glass-card rounded-3xl overflow-hidden hover:scale-[1.02] transition-all duration-500 border border-primary-500/10 hover:border-primary-500/30 hover:shadow-[0_0_30px_-5px_rgba(0,217,255,0.15)]"
             style={{ willChange: "transform" }}
         >
             {/* Gradient Border Effect - Optimized */}
@@ -100,12 +100,16 @@ function ProjectCard({ project, index }: ProjectCardProps) {
                 </div>
             </div>
 
-            {/* Hover Glow Effect */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+            {/* Hover Glow Effect - Scroll Enabled */}
+            <motion.div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                 style={{ willChange: "opacity" }}
+                whileInView={{ opacity: 0.6 }}
+                viewport={{ margin: "-20%" }}
+                transition={{ duration: 0.5 }}
             >
                 <div className={`absolute inset-0 bg-gradient-to-r ${project.color} opacity-10 blur-2xl`} />
-            </div>
+            </motion.div>
         </motion.div>
     );
 }

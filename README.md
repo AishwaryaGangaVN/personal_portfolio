@@ -4,17 +4,17 @@
 
 A modern, high-performance portfolio website built to showcase my data analysis projects, skills, and professional experience. Designed with a focus on interactivity and aesthetics, it features immersive 3D visualizations, smooth animations, and a fully responsive layout.
 
-**Live Demo:** [Link to your deployed site (optional)]
+**Live Demo:** https://aishwaryaganga.vercel.app/
 
 ![Portfolio Preview](public/profile.png)
 
 ## ✨ Key Features
 
-- **Interactive 3D Backgrounds**: Custom-built Neural Mesh and Floating Data Cubes using `React-Three-Fiber` and `GLSL` shaders.
-- **Modern UI/UX**: Glassmorphism effects, gradient typography, and micro-interactions powered by `Framer Motion`.
-- **Responsive Design**: Fully optimized layout for seamless viewing on desktops, tablets, and mobile devices.
+- **Global 3D Ecosystem**: Seamless Neural Mesh and Floating Data Cubes that persist across the entire site for an immersive deep-space feel.
+- **Refined Glassmorphism UI**: High-end "Cool & Elegant" aesthetic with subtle Electric Blue glow effects and washout-free transparency.
+- **Advanced Mobile UX**: Optimized layout with vertically stacked certifications and touch-friendly interactions.
 - **Performance Optimized**: Built with Next.js App Router for fast loading, SEO benefits, and smooth transitions.
-- **Dynamic Content**: Sections for Experience, Projects, Skills, and Education are modular and data-driven.
+- **Dynamic Content**: Modular, data-driven sections for Experience, Projects, Skills, and Education.
 
 ## 🛠️ Tech Stack
 

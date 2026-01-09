@@ -36,7 +36,7 @@ function Counter({ end, duration = 2, suffix = "" }: { end: number; duration?: n
 
 export default function About() {
     return (
-        <section id="about" className="relative py-20 md:py-32 bg-dark-900 overflow-hidden">
+        <section id="about" className="relative py-20 md:py-32 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0" style={{

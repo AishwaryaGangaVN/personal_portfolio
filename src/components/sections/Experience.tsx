@@ -6,9 +6,9 @@ import { Briefcase, MapPin, Calendar } from "lucide-react";
 
 export default function Experience() {
     return (
-        <section id="experience" className="relative py-20 md:py-32 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900 overflow-hidden">
+        <section id="experience" className="relative py-20 md:py-32 overflow-hidden">
             {/* Animated Background */}
-            <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary-500 rounded-full blur-3xl animate-pulse-slow" />
             </div>
 
@@ -36,12 +36,12 @@ export default function Experience() {
                                         }`}
                                 >
                                     {/* Timeline Dot */}
-                                    <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-primary rounded-full glow-primary z-10" />
+                                    <div className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-primary rounded-full shadow-lg z-10" />
 
                                     {/* Content */}
                                     <div className={`flex-1 ml-20 md:ml-0 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
                                         <div
-                                            className="glass-card p-8 rounded-3xl hover:scale-105 transition-all duration-300 hover:glow-primary"
+                                            className="glass-card p-8 rounded-3xl hover:scale-105 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(0,217,255,0.1)] border border-white/5 hover:border-primary-500/20"
                                             style={{ willChange: "transform" }}
                                         >
                                             {/* Company & Role */}

@@ -47,13 +47,8 @@ export default function Hero() {
     }, []);
 
     return (
-        <section ref={sectionRef} id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-dark-950 via-dark-900 to-dark-800">
-            {/* Restored FloatingDataCubes Background */}
-            {isVisible && (
-                <div className="absolute inset-0 z-0">
-                    <FloatingDataCubes />
-                </div>
-            )}
+        <section ref={sectionRef} id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+
 
             {/* Gradient Overlay - pointer-events-none to let clicks reach particles if needed, though tsparticles usually handles its own canvas */}
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-dark-900/50 to-dark-950 z-10 pointer-events-none" />
